@@ -7,8 +7,10 @@ const helloRoute = (server: Server) => {
   server.route({
     method: 'GET',
     path: '/hello',
-    // tags: ['api'],
-    handler: helloController.show,
+    options: {
+      handler: helloController.show,
+      tags: ['api'],
+    },
   })
 }
 

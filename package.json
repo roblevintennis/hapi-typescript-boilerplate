@@ -1,0 +1,19 @@
+{
+  "name": "hapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/hapi__hapi": "^18.2.6",
+    "@types/node": "^12.12.14",
+    "nodemon": "^2.0.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^18.4.0"
+  },
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"yarn run compile\"",
+    "compile": "tsc && node ./dist/index.js"
+  }
+}

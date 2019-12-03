@@ -7,6 +7,6 @@ export default class HelloController extends BaseController {
   }
 
   show(request: Request, h: ResponseObject) {
-    return 'hello world -- show method w00t w00t!'
+    return 'show me off'
   }
 }

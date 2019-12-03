@@ -11,6 +11,7 @@
     "@types/node": "^12.12.14",
     "hapi-swagger": "^11.0.2",
     "nodemon": "^2.0.1",
+    "prettier": "^1.19.1",
     "typescript": "^3.7.2"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
   },
   "scripts": {
     "start": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"yarn run compile\"",
-    "compile": "tsc && node ./dist/index.js"
+    "compile": "tsc && node ./dist/index.js",
+    "format:prettier": "yarn run prettier --config ./.prettierrc.json --write 'src/**/*.ts'"
   }
 }
